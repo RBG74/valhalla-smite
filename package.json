@@ -1,0 +1,23 @@
+{
+  "name": "valhalla",
+  "version": "1.0.0",
+  "description": "Valhalla project, just messing around with the Smite API.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "valhalla-smite"
+  },
+  "author": "RBG",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "hbs": "^4.0.1",
+    "mongoose": "^4.9.5"
+  }
+}
