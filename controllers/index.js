@@ -5,9 +5,14 @@ var app = require('../app');
 //router.use('/comments', require('./comments'));
 
 router.get('/', function(req, res) {
-    res.render('index', {
-        title: 'Valhalla'
+
+    var apihelper = require('../helpers/smiteapi');
+    apihelper.createSession('createsession', function(signature){
+        res.render('index', {
+            title: 'Valhalla'
+        });
     });
+    
 });
 
 module.exports = router;

@@ -15,6 +15,7 @@ app.set('view engine', 'hbs');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(config.database);
+//config.createAdmin();
 
 //app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
