@@ -14,7 +14,7 @@ app.engine('hbs', require('hbs').__express);
 app.set('view engine', 'hbs');
 
 mongoose.Promise = global.Promise;
-mongoose.connect(config.database);
+//mongoose.connect(config.database);
 //config.createAdmin();
 
 //app.use(express.static(__dirname + '/public'));

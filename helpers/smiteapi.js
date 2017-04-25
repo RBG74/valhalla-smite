@@ -32,11 +32,11 @@ exports.createSession = function(callback){
         
         var uri = apiendpoint + "createsessionJson/" + devid + "/" + signature + "/" + timestamp;
 
-        request({method: 'GET', uri: uri}, function (error, response, body) {
-            console.log('error:', error); // Print the error if one occurred 
-            console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received 
+        request({method: 'GET', uri: uri}, function (err, response, body) {
+            //console.log('error:', error); // Print the error if one occurred 
+            //console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received 
             //console.log('body:', body); // Print the HTML for the Google homepage. 
+            callback(err, response, body);
         });
-        //callback
     });
 };
